@@ -1,6 +1,7 @@
 // Problem-5 starts here.
 
 function analyzeText(str) {
+  str = typeof str === "string" ? str.trim() : str;
   if (typeof str !== "string" || !str) {
     return "Invalid";
   }

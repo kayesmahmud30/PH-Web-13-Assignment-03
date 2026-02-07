@@ -65,6 +65,8 @@ function gonoVote(array) {
 
 //Problem-05: Text Analyzer for an AI Company
 function analyzeText(str) {
+  str = typeof str === "string" ? str.trim() : str;
+
   if (typeof str !== "string" || !str) {
     return "Invalid";
   }
